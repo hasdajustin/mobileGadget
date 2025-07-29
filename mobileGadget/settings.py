@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'chargers',
     'powerbanks',
     'cables',
-    'phonecase',
+    'phonecases',
 ]
 
 MIDDLEWARE = [
