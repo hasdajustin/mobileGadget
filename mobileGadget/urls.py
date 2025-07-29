@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('earphones/', include('earphones.urls')),
-    path('charges/', include('charges.urls')),
+    path('chargers/', include('chargers.urls')),
     path('powerbanks/', include('powerbanks.urls')),
     path('cables/', include('cables.urls')),
     path('phonecases/', include('phonecases.urls')),
