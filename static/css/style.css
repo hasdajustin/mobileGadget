@@ -1,0 +1,36 @@
+:root {
+  --primary-background-color: #000000;
+  --secondary-background-color: #ffffff;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000;
+  --hover-text-color: #ff0000;
+}
+
+
+nav {
+  background-color: var(--primary-background-color) !important;
+}
+
+
+nav a {
+  color: var(--primary-text-color) !important;
+  transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+  color: var(--hover-text-color) !important;
+}
+
+nav li .dropdown-menu{
+    background-color: var(--primary-background-color)!important;
+}
+
+nav .profile a {
+  color: var(--primary-text-color) !important;
+  transition: color 0.3s ease;
+}
+
+nav .profile a i:hover {
+  color: var(--hover-text-color) !important;
+}
