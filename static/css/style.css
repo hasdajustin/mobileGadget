@@ -34,3 +34,8 @@ nav .profile a {
 nav .profile a i:hover {
   color: var(--hover-text-color) !important;
 }
+
+
+footer{
+    background-color: var(--primary-background-color) !important;
+}
