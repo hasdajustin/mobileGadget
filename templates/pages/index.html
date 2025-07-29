@@ -4,5 +4,180 @@
 {% block title %} Home {% endblock title %}
 
 {% block content %}
+<header class="py-5 bg-light">
+    <div class="container">
+        <div class="hero_section bg-dark text-light text-center mb-5 p-5 rounded">
+            <h1>Welcome to Mobile Gadget</h1>
+            <p class="lead mb-4">
+                Discover the latest and greatest mobile accessories — from high-quality earphones and fast chargers to
+                stylish phone cases and durable cables.
+                We bring you unbeatable prices, trusted brands, and a seamless shopping experience.
+            </p>
+            <a href="#" class="btn btn-outline-light mb-5">
+                <i class="fas fa-shopping-cart me-2"></i> Shop Now
+            </a>
+        </div>
+
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-headphones-alt fs-1 text-dark mb-3"></i>
+                        <h5 class="card-title">Premium Audio Gear</h5>
+                        <p class="card-text">Experience crystal-clear sound with our top-rated earphones and wireless
+                            headphones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-bolt fs-1 text-dark mb-3"></i>
+                        <h5 class="card-title">Fast & Safe Charging</h5>
+                        <p class="card-text">Power up quickly and securely with our certified chargers and power banks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-mobile-alt fs-1 text-dark mb-3"></i>
+                        <h5 class="card-title">Stylish & Durable Cases</h5>
+                        <p class="card-text">Protect your device in style with our wide range of phone cases and covers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-plug fs-1 text-dark mb-3"></i>
+                        <h5 class="card-title">Reliable Cables</h5>
+                        <p class="card-text">High-quality charging and data cables compatible with all major devices,
+                            ensuring fast and safe connectivity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-battery-full fs-1 text-dark mb-3"></i>
+                        <h5 class="card-title">Power Banks</h5>
+                        <p class="card-text">Portable and powerful power banks to keep your devices charged on the go,
+                            with multiple capacity options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section class="audio_gear py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Premium Audio Gear</h2>
+    
+    <div id="audioGearCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Carousel Item 1 (active) -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <a href="/products/wireless-headphones" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/wireless1.jpg' %}" class="card-img-top" alt="Wireless Headphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Headphones</h5>
+                    <p class="card-text">High-fidelity wireless headphones with noise cancellation.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <a href="/products/in-ear-earphones" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/earphone1.jpg' %}" class="card-img-top" alt="In-Ear Earphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">In-Ear Earphones</h5>
+                    <p class="card-text">Comfortable in-ear design with crystal-clear sound.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <a href="/products/bluetooth-speaker" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/bluetooth1.jpg' %}" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Bluetooth Speaker</h5>
+                    <p class="card-text">Portable speaker with deep bass and long battery life.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <a href="/products/over-ear-headphones" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/headphone1.jpg' %}" class="card-img-top" alt="Over-Ear Headphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Over-Ear Headphones</h5>
+                    <p class="card-text">Premium comfort with studio-quality sound.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <a href="/products/sports-earbuds" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/sports1.jpg' %}" class="card-img-top" alt="Sports Earbuds">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Sports Earbuds</h5>
+                    <p class="card-text">Sweat-resistant and secure fit for active lifestyles.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <a href="/products/noise-cancelling-earphones" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow">
+                  <img src="{% static 'images/noise1.jpg' %}" class="card-img-top" alt="Noise-Cancelling Earphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Noise-Cancelling Earphones</h5>
+                    <p class="card-text">Block out distractions with advanced noise-cancellation tech.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#audioGearCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#audioGearCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
 
 {% endblock content %}
