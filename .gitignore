@@ -1,8 +1,32 @@
-*.log
-*.pot
-*.pyc
+# Python bytecode/cache files
 __pycache__/
-local_settings.py
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders
+env/
+venv/
+ENV/
+
+# Environment variables files (Secrets)
+.env
+.env.*
+
+# SQLite database (if used)
 db.sqlite3
-db.sqlite3-journal
-media
+
+# Django media uploads (user uploaded files)
+media/
+
+# Static files collected by collectstatic
+/staticfiles/
+/static/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+
+# Logs and debug files
+*.log
+
