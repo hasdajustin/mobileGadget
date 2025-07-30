@@ -79,44 +79,39 @@
 </header>
 
 <section class="audio_gear py-5">
-  <div class="container">
-    <h2 class="mb-4 text-center">Premium Audio Gear</h2>
+    <div class="container">
+        <h2 class="mb-4 text-center">Premium Audio Gear</h2>
 
-    <div id="audioGearCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+        <div id="audioGearCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-inner">
 
-        {% for gear in audio_gears %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <div class="d-flex justify-content-center p-5">
-            <div class="card border-0 shadow" style="width: 25rem;">
-              <img src="{{ gear.image.url }}" class="card-img-top" alt="{{ gear.title }}">
-              <div class="card-body text-center">
-                <h5 class="card-title">{{ gear.title }}</h5>
-                <p class="card-text">{{ gear.description }}</p>
-                <a href="{{ gear.get_absolute_url }}" class="btn btn-primary">View Details</a>
-              </div>
+                {% for gear in audio_gears %}
+                <div class="carousel-item">
+                    <div class="card border-0 shadow mx-2 h-100">
+                        <img src="{{ gear.image.url }}" class="card-img-top" alt="{{ gear.title }}">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">{{ gear.title }}</h5>
+                            <p class="card-text flex-grow-1">{{ gear.description }}</p>
+                            <a href="#" class="btn btn-dark mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
             </div>
-          </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#audioGearCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#audioGearCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        {% endfor %}
-
-      </div>
-
-      <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#audioGearCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#audioGearCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
     </div>
-  </div>
 </section>
-
-
-
 
 {% endblock content %}
