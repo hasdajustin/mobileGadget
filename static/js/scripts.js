@@ -39,4 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     setupCarousel("carousel-inner"); // for audioGearCarousel
     setupCarousel("charger-carousel-inner"); // for chargerCarousel
+    setupCarousel("phonecase-carousel-inner"); // for phonecaseCarousel
 });
