@@ -37,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             carouselInner.appendChild(newItem);
         }
     }
-
-    // Setup both carousels
     setupCarousel("carousel-inner"); // for audioGearCarousel
     setupCarousel("charger-carousel-inner"); // for chargerCarousel
 });
