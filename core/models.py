@@ -30,7 +30,7 @@ class Charger(models.Model):
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
-class phonecases(models.Model):
+class Phonecases(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True, blank=True)
     description = models.TextField()
